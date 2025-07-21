@@ -31,9 +31,9 @@ async def create_form_data(
         phone_number=phone_number,
         email=email,
         address=address,
-        resume_file=resume_filename  # ✅ THIS LINE IS CRUCIAL
+        resume_file=resume_filename  
     )
-    print("Resume filename to save:", resume_filename)  # Add this before creating form_data
+    print("Resume filename to save:", resume_filename)  
     return crud.create_form_data(db=db, form_data=form_data)
 
 @router.get("/form-data", response_model=List[schemas.FormDataOut])
