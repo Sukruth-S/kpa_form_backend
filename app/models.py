@@ -9,4 +9,4 @@ class FormData(Base):
     phone_number = Column(String, nullable=False, unique=True)
     email = Column(String, nullable=True)
     address = Column(String, nullable=True)
-    resume_file = Column(String)  # store filename or path
+    resume_file = Column(String)  
